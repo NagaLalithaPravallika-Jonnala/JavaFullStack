@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Resume</title>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Sagar Jonnala</h1>
+    <h2>Java Full Stack Developer</h2>
+    <p>
+      Email: sagar@example.com | Phone: +91-9876543210<br>
+      <a href="https://linkedin.com/in/sagarjonnala">LinkedIn</a> |
+      <a href="https://github.com/sagarjonnala">GitHub</a>
+    </p>
+  </header>
+
+  <hr>
+
+  <!-- Summary/About Me -->
+  <section>
+    <h3>About Me</h3>
+    <p>
+      Passionate Java full stack developer with a strong foundation in web technologies and hands-on experience in building scalable applications. Eager to contribute to dynamic development teams and continue learning.
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- Education Section -->
+  <section>
+    <h3>Education</h3>
+    <ul>
+      <li>B.Tech in Computer Science - ABC University, 2023</li>
+      <li>Intermediate (MPC) - XYZ Junior College, 2019</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <!-- Internship Experience -->
+  <section>
+    <h3>Internship Experience</h3>
+    <h4>Web Development Intern – CodeSoft</h4>
+    <p><em>June 2023 – August 2023</em></p>
+    <ul>
+      <li>Developed responsive web pages using HTML, CSS, and JavaScript.</li>
+      <li>Assisted in integrating RESTful APIs with frontend.</li>
+      <li>Collaborated with a team to enhance user experience.</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <!-- Skills Section -->
+  <section>
+    <h3>Skills</h3>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Java, Spring Boot, Hibernate</li>
+      <li>MySQL, MongoDB</li>
+      <li>Communication, Teamwork, Problem Solving</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <!-- Projects Section -->
+  <section>
+    <h3>Projects</h3>
+    <h4>Student Management System</h4>
+    <p>Built a full-stack Java application to manage student records with Spring Boot and MySQL.</p>
+
+    <h4>Portfolio Website</h4>
+    <p>Designed and deployed a personal portfolio using only HTML and CSS.</p>
+  </section>
+
+  <hr>
+
+  <!-- Footer Section -->
+  <footer>
+    <h4>Certifications & Achievements</h4>
+    <ul>
+      <li>Java Full Stack Certificate – XYZ Academy</li>
+      <li>Winner – Inter-college Coding Hackathon 2022</li>
+    </ul>
+    <p>&copy; 2025 Sagar Jonnala. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
