@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        table {
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        td {
+            padding: 5px;
+        }
+        input {
+            padding: 8px;
+            width: 200px;
+        }
+        h3 {
+            color: blue;
+        }
+        tr {
+            line-height: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;            
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <form id="registrationform" onsubmit="return validateForm()">
+        <h3 align="center">Create an account</h3>
+        <table align="center">
+            <tr>
+                <td>
+                    <input type="text" placeholder="First name" id="firstname"><br>
+                    <span id="firstnameError" class="error"></span>
+                </td>
+                <td>
+                    <input type="text" placeholder="Last name" id="lastname"><br>
+                    <span id="lastnameError" class="error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="email" placeholder="Email address" required id="email"><br>
+                    <span id="mailError" class="error"></span>
+                </td>
+                <td>
+                    <input type="number" placeholder="Mobile no" id="mob"><br>
+                    <span id="phoneNumberError" class="error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" placeholder="New Password" required id="newpassword"><br>
+                    <span id="passwordError" class="error"></span>
+                </td>
+                <td>
+                    <input type="password" placeholder="Confirm Password" required id="confirm"><br>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><button type="submit">Register</button></td> 
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function validateForm() {
+            let isValid = true;
+
+            // Reset errors
+            document.getElementById("firstnameError").innerText = "";
+            document.getElementById("lastnameError").innerText = "";
+            document.getElementById("mailError").innerText = "";
+            document.getElementById("phoneNumberError").innerText = "";
+            document.getElementById("passwordError").innerText = "";
+
+            // Get values
+            let firstname = document.getElementById("firstname").value.trim();
+            let lastname = document.getElementById("lastname").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let mobile = document.getElementById("mob").value.trim();
+            let newpassword = document.getElementById("newpassword").value.trim();
+            let confirm = document.getElementById("confirm").value.trim();
+
+            if (firstname === "") {
+                document.getElementById("firstnameError").innerText = "First name is required";
+                isValid = false;
+            }
+
+            if (lastname === "") {
+                document.getElementById("lastnameError").innerText = "Last name is required";
+                isValid = false;
+            }
+
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById("mailError").innerText = "Please enter a valid email address";
+                isValid = false;
+            }
+
+            if (mobile.length !== 10 || !/^\d{10}$/.test(mobile)) {
+                document.getElementById("phoneNumberError").innerText = "Enter exactly 10 digits";
+                isValid = false;
+            }
+
+            if (newpassword.length < 6) {
+                document.getElementById("passwordError").innerText = "Must be at least 6 characters";
+                isValid = false;
+            }
+
+            if (newpassword !== confirm) {
+                document.getElementById("passwordError").innerText = "Passwords do not match";
+                isValid = false;
+            }
+
+            return isValid;
+        }
+    </script>
+</body>
+</html>
