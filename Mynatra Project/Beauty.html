@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BEAUTY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color:peachpuff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .navbar-brand {
+      color: #ff3f6c;
+      font-weight: bold;
+      font-size: 1.6rem;
+    }
+    .nav-link {
+      color: #282c3f !important;
+      font-weight: 600;
+    }
+    .product-row {
+      border-bottom: 1px solid #eee;
+      padding: 20px 0;
+      transition: 0.3s;
+    }
+    .product-row:hover {
+      background-color: #f9f9f9;
+    }
+    .product-img {
+      width: 180px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .brand-name {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .product-name {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .price {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-top: 5px;
+    }
+    .strike {
+      text-decoration: line-through;
+      color: gray;
+      font-size: 0.9rem;
+    }
+    .discount {
+      color: #ff3f6c;
+      font-size: 0.9rem;
+      margin-left: 6px;
+    }
+    .btn-cart {
+      background-color: #ff3f6c;
+      color: white;
+      border: none;
+      padding: 6px 14px;
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+    .btn-cart:hover {
+      background-color: #e63558;
+    }
+    .wishlist-btn {
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      color: #555;
+      float: right;
+    }
+    .wishlist-btn:hover {
+      color: #ff3f6c;
+    }
+  </style>
+</head>
+<body>
+<div class="container mt-4 mb-2">
+  <h3 class="fw-bold">BEAUITY</h3>
+</div>
+<div class="container">
+  <div class="row product-row align-items-center">
+    <div class="col-md-3">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqDUIWn2CREAeHoMUn05h4rCf-EnEDsW6pnQ&s" alt="Product Image" class="product-img">
+    </div>
+    <div class="col-md-9">
+      <button class="wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+      <div class="brand-name">LAKEME</div>
+      <div class="product-name">5 Must-Have Beauty Tools For Women - Tata 1mg Capsules</div>
+      <div class="price">₹999 <span class="strike">₹1999</span> <span class="discount">(15% OFF)</span></div>
+      <button class="btn btn-cart">Add to Cart</button>
+    </div>
+  </div>
+  <div class="row product-row align-items-center">
+    <div class="col-md-3">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrfW1pMmGHhvvc9ZvWuqKZC0HFQdisX3KYiA&s" alt="Product Image" class="product-img">
+    </div>
+    <div class="col-md-9">
+      <button class="wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+      <div class="brand-name">MAYBELLINE</div>
+      <div class="product-name">Makeup Brushes | Makeup Tips | Makeup Tricks | HerZindagi</div>
+      <div class="price">₹899<span class="strike">₹1559</span> <span class="discount">(38% OFF)</span></div>
+      <button class="btn btn-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="row product-row align-items-center">
+    <div class="col-md-3">
+      <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/platform/extensions/widget-manager/free/original/SB17NI72L-Tira-Tools-Top-Banner-Mobile-1.jpg" alt="Product Image" class="product-img">
+    </div>
+    <div class="col-md-9">
+      <button class="wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+      <div class="brand-name">NYKAA</div>
+      <div class="product-name">Buy Beauty Tools & Appliances Online at Best Price in India - Tira</div>
+      <div class="price">₹799 <span class="strike">₹999</span> <span class="discount">(45% OFF)</span></div>
+      <button class="btn btn-cart">Add to Cart</button>
+    </div>
+</div>
+<div class="row product-row align-items-center">
+    <div class="col-md-3">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScXGKy-QBLoWaulafWvonRZoa4L8Hg4U8L-w&s" alt="Product Image" class="product-img">
+    </div>
+    <div class="col-md-9">
+      <button class="wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+      <div class="brand-name">MINIMALIST</div>
+      <div class="product-name">Tried & Tested #2 - Beauty Tools - Bang on Style</div>
+      <div class="price">₹599 <span class="strike">₹999</span> <span class="discount">(50% OFF)</span></div>
+      <button class="btn btn-cart">Add to Cart</button>
+    </div>
+</div>
+
+</body>
+</html>
