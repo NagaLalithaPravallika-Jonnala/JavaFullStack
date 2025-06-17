@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kids's Fashion </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color:powderblue;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .navbar-brand {
+      color: #ff3f6c;
+      font-weight: bold;
+      font-size: 1.6rem;
+    }
+    .nav-link {
+      color: #282c3f !important;
+      font-weight: 600;
+    }
+    .product-row {
+      border-bottom: 1px solid #eee;
+      padding: 20px 0;
+      transition: 0.3s;
+    }
+    .product-row:hover {
+      background-color: #f9f9f9;
+    }
+    .product-img {
+      width: 180px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .brand-name {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .product-name {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .price {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-top: 5px;
+    }
+    .strike {
+      text-decoration: line-through;
+      color: gray;
+      font-size: 0.9rem;
+    }
+    .discount {
+      color: #ff3f6c;
+      font-size: 0.9rem;
+      margin-left: 6px;
+    }
+    .btn-cart {
+      background-color: #ff3f6c;
+      color: white;
+      border: none;
+      padding: 6px 14px;
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+    .btn-cart:hover {
+      background-color: #e63558;
+    }
+    .wishlist-btn {
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      color: #555;
+      float: right;
+    }
+    .wishlist-btn:hover {
+      color: #ff3f6c;
+    }
+  </style>
+</head>
+<body>
+<div class="container mt-4 mb-2">
+  <h3 class="fw-bold">Kid's Fashion</h3>
+</div>
+<div class="container">
+  <div class="row product-row align-items-center">
+    <div class="col-md-3">
+      <img src="https://i.pinimg.com/736x/ff/46/d7/ff46d73e5c9fb9810c970f0a8ffb1713.jpg" alt="Product Image" class="product-img">
+    </div>
+    <div class="col-md-9">
+      <button class="wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+      <div class="brand-name">H&M KIDS</div>
+      <div class="product-name">Trendy fashion</div>
+      <div class="price">₹1999 <span class="strike">₹2999</span> <span class="discount">(50% OFF)</span></div>
+      <button class="btn btn-cart">Add to Cart</button>
+    </div>
+  </div>
+  <div class="row product-row align-items-center">
+    <div class="col-md-3">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO1mb4OmTIYs74zaQFvqP27JoCrzv9mT_T7A&s" alt="Product Image" class="product-img">
+    </div>
+    <div class="col-md-9">
+      <button class="wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+      <div class="brand-name">HOPSCOTCH</div>
+      <div class="product-name">Ethnic dress</div>
+      <div class="price">₹999<span class="strike">₹1559</span> <span class="discount">(30% OFF)</span></div>
+      <button class="btn btn-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="row product-row align-items-center">
+    <div class="col-md-3">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP1F_H8YwsVyz_qpBfDCwRMdFoHSPPsg5q3w&s" alt="Product Image" class="product-img">
+    </div>
+    <div class="col-md-9">
+      <button class="wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+      <div class="brand-name">YK</div>
+      <div class="product-name">Night dress</div>
+      <div class="price">₹599 <span class="strike">₹999</span> <span class="discount">(20% OFF)</span></div>
+      <button class="btn btn-cart">Add to Cart</button>
+    </div>
+</div>
+<div class="row product-row align-items-center">
+    <div class="col-md-3">
+      <img src="https://m.media-amazon.com/images/I/41S2xA17ekL._AC_UY1100_.jpg" alt="Product Image" class="product-img">
+    </div>
+    <div class="col-md-9">
+      <button class="wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+      <div class="brand-name">YK</div>
+      <div class="product-name">Night suits</div>
+      <div class="price">₹499 <span class="strike">₹699</span> <span class="discount">(50% OFF)</span></div>
+      <button class="btn btn-cart">Add to Cart</button>
+    </div>
+</div>
+
+</body>
+</html>
