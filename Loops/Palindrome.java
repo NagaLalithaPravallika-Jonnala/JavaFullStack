@@ -24,6 +24,6 @@ System.out.println(originalNum + " is NOT a Palindrome number.");
 }
 }
 }
-/*D:\Java2025\Loops>java Palindrome
+/*
 Enter a number: 22
 22 is a Palindrome number.*/
