@@ -26,7 +26,7 @@ System.out.println("a is equal to b");
 }
 }
 }
-/*D:\Java2025\Loops>java Equalornot
+/*
 Enter a number a: 8
 Enter a number b: 8
 a is equal to b
