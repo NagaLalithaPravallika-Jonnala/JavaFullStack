@@ -26,8 +26,6 @@ else
 }
 }
 }
-/*D:\Java2025\Loops>javac Largestnumberifelse.java
-
-D:\Java2025\Loops>java Largestnumberifelse
+/*
 The Largest number is 30
 */
