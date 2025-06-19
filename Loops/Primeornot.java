@@ -31,6 +31,6 @@ System.out.println(num + " is Not a Prime Number.");
 }
 }
 }
-/*D:\Java2025\Loops>java Primeornot
+/*
 Enter a number: 7
 7 is a Prime Number.*/
